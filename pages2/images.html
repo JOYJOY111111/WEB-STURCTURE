@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Structure</title>
+    <link rel="stylesheet" href="/CSS/Image.css">
+</head>
+<body>
+    <header>
+        <div>
+            <br>
+            <h1><b>Marelco</b></h1>
+            <div class="container"> |
+                <a href="../index.html">Home</a> |
+                <a href="../pages/About.html">About</a> |
+                <a href="../pages/contactUs.html">Contact</a> |
+                <a href="../pages/profile.html">Profile</a> |
+                <button id="submit_btn"><a href="pages/Login.html">Login</a></button>
+            </div>
+        </div>
+        <br>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="../pages2/heading.html">Heading</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages2/images.html">Images</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages2/table.html">Table</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages2/forms.html">Forms</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages/list.html">HTML Lists</a></li>
+            </ul>
+        </nav>
+        <article>
+            <br>
+            <h2 style="color: white; font-weight: bold;">Welcome to the Meralco Gallery</h2>
+            <p style="color: white;">The pictures show the activities of Meralco Workers.</p>
+            <br><br><br><br>
+            <div class="gallery">
+                <div class="image-container" id="imageContainer">
+                    <span style="--i: 1"><img src="../img/image 1.png" alt="Image 1" width="30%" height="45%"/></span>
+                    <span style="--i: 2"><img src="../img/Image 2.png" alt="Image 2"/></span>
+                    <span style="--i: 3"><img src="../img/Image 3.png" alt="Image 3"/></span>
+                    <span style="--i: 4"><img src="../img/Image 4.png" alt="Image 4"/></span>
+                    <span style="--i: 5"><img src="../img/Image 5.png" alt="Image 5"/></span>
+                    <span style="--i: 6"><img src="../img/Image 6.png" alt="Image 6"/></span>
+                    <span style="--i: 7"><img src="../img/Image 7.png" alt="Image 7"/></span>
+                    <span style="--i: 8"><img src="../img/Image 8.png" alt="Image 8"/></span>
+                </div>
+                <br>
+                <br><br><br><br>
+                <div class="btn-container">
+                    <button class="btn" id="prev">Prev</button>
+                    <button class="btn" id="next">Next</button>
+                </div>
+            </div>
+            
+        </article>
+    </section>
+    <footer>
+        <h2>Meralco Santa Cruz</h2>
+        <div>
+            <a href="./pages/policy.html">Policy</a> |
+            <a href="./pages/Faqs.html">FAQs</a> |
+        </div>
+        <div>
+            <p>Copyrights</p>
+        </div>
+    </footer>
+    <script>
+        let currentRotation = 0;
+        const imageContainer = document.getElementById('imageContainer');
+
+        document.getElementById('next').addEventListener('click', function() {
+            currentRotation -= 45; // Rotate by 45 degrees to the right
+            imageContainer.style.transform = `perspective(1000px) rotateY(${currentRotation}deg)`;
+        });
+
+        document.getElementById('prev').addEventListener('click', function() {
+            currentRotation += 45; // Rotate by 45 degrees to the left
+            imageContainer.style.transform = `perspective(1000px) rotateY(${currentRotation}deg)`;
+        });
+    </script>
+</body>
+</html>

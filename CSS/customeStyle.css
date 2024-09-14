@@ -1,0 +1,228 @@
+header{
+    background-color: rgb(28, 219, 155);
+    color: rgb(253, 255, 251);
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+header a{
+    color: white;
+}
+.body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+    align-items: center;
+}
+.container a{
+    color: hsl(217, 31, 80);
+    text-decoration: none;
+    font-size: 30;
+    padding: 10px;
+    height: 50px;
+
+}
+.container a:not(#submit_btn a){
+    color: hsl(217, 31, 80);
+    text-decoration: none;
+    font-size: 30;
+    padding: 10px;
+    height: 50px;
+}
+.container a:not(#submit_btn a):hover{
+    background-color: rgb(141, 147, 165);
+    padding: 10px;
+    color: black;
+    border-radius: 5%;
+}
+
+#submit_btn{
+    background-color: hwb(190 16% 27%);
+    padding: 7px;
+    font-size: 15px;
+    color: white;
+    border-radius: 12px;
+    transition: all ease-in-out;
+}
+
+#submit_btn:hover{
+    background-color: rgb(22, 210, 147);
+    color: black;
+}
+
+nav:not(footer){
+    background-color: rgb(37, 184, 115);
+    float: left;
+    width: 20%;
+    height :600px; 
+    margin-top: auto;
+    justify-content:center;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav ul:hover{
+    background-color: rgb(41, 39, 39) ;
+    padding: 7px;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+article{
+    background-color: rgb(48, 169, 169);
+    border-color:fill 0 linear-gradient(#0001, #000);
+    float:left ;
+    width: 75%;
+    height: 600px;
+    padding-left: 5%;
+}
+
+.contact-box {
+    width: 89%;
+    max-width: 400px;
+    background:linear-gradient(to left, rgb(16, 131, 163), rgb(156, 43, 141));
+    height: auto;
+    text-align: center;
+    margin: 20px auto; 
+    padding: 35px 40px;
+    box-shadow: 1px 1px 12px rgb(0, 0, 0);
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  }
+  
+  .contact-box h1{
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400%;
+  color: white;
+  text-size-adjust: 30%;
+  
+  }
+  .text-box{
+  border: 1px solid rgb(0, 0, 0);
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 14px;
+  box-shadow: 0px 3px 4px rgb(49, 84, 89);
+  border-style: double;
+  color: white;
+  }
+  
+
+  .text-box label{
+    display: block;
+    text-align: left;
+    color: rgb(211, 210, 210);
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+  
+  .text-box input, .text-box textarea{
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+    margin-top: 6px;
+    color: white;
+  }
+  
+  .btn{
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 15px;
+    border-style:double;
+    background-color: #007BFF;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+.about-box {
+    border-color: rgba(212, 203, 198, 0.889);
+    background:linear-gradient(to left, rgb(16, 131, 163), rgb(156, 43, 141));
+    width: 70%;
+    height: 50%;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+   
+    border-style: double;
+}
+.aboutus :not(h2 , hr){
+    text-align: center;
+    width:89%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.image1 img {
+    margin: 0 auto;
+    display:inline;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px black;
+    transition: all ease-in-out;
+    border-width: 5px;
+    border: 5px;
+    border-style:double;
+    border-color: aqua;
+    
+    
+    
+}
+table{
+    width: 90%;
+    height: 60%;
+    background:linear-gradient(to left, rgb(16, 131, 163), rgb(156, 43, 141));
+    color: rgb(253, 251, 252);
+    border-radius: 20px;
+    font-size: large;
+    box-shadow: 0 1px 14px black;
+    transition: all ease-in-out box-shadow;
+}
+table:hover{
+    box-shadow:0 1px 20px rgb(43, 26, 153);
+}
+table th{
+    padding: 12px;
+    width: 12px;
+    height: 13px;
+    border-radius: 4px;
+
+}
+table tr{
+    border-radius: 12px;
+}
+.image1 img:hover{
+    box-shadow: 1px 1px 15px rgb(177, 15, 205);
+
+
+}
+.text :not(p){
+    font-family: Arial;
+    font-size: none;
+    color: none;
+    font-weight: bold;
+}
+footer{
+    background-color: rgb(28, 219, 155);
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 16%;
+    gap: 10;
+    font-size: large
+}
+
+footer a{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
